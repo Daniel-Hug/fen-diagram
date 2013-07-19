@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <title>Chess</title>
+        <script src="../fen-diagram.js" type="text/javascript" charset="utf-8"></script>
+        <script src="./fen-edit.js" type="text/javascript" charset="utf-8"></script>
+        <style type="text/css" media="screen">
+        body {
+            margin: 30px;
+        }
+        canvas#board {
+            width: 512px;
+            height: 520px;
+        }
+        #container {
+            font-family: "Lucida Grande", "MS Trebuchet", "Verdana", sans-serif;
+            margin: 0 auto;
+            width: 960px;
+        }
+        #board-container {
+            width: 500px;
+            height: 520px;
+            float: left;
+        }
+        #warning-container {
+            border: 2px solid #eee;
+            width: 450px;
+            height: 518px;
+            float: right;
+        }
+        #warning-container pre {
+            font: 10px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+            margin: 10px;
+        }
+        form {
+            clear: both;
+            width:960px;
+            display: table;
+            margin-top: 8px;
+        }
+        label {
+            font: 16px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+            line-height: 25px;
+            display: table-cell;
+            width: 80px;
+            text-align: right;
+        }
+        input {
+            outline: none;
+            margin-top: 10px;
+            font: 16px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+            display: table-cell;
+            width: 880px;
+            height: 32px;
+            text-align: left;
+            border: 2px solid black;
+        }
+        .error {
+            background-color: red;
+            color: white;
+        }
+        .centered-text {
+            text-align: center;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="board-container">
+                <canvas id="board" width=512 height=520></canvas>
+            </div>
+            <div id="warning-container">
+                <pre id="warnings"></pre>
+            </div>
+            <form method="post">
+                <label for="fen-input">FEN:&nbsp;</label>
+                <input type="text" id="fen-input" value="rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1" autofocus spellcheck="false">
+            </form>
+            <p class="centered-text">
+                <a id="download-image" href="javascript:void(0)" download="chess-board.png">Download Image</a>
+            </p>
+        </div>
+    </body>
+</html>

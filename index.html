@@ -1,21 +1,34 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <title>Fen-Diagram example</title>
-    <script src="fen-diagram.js" type="text/javascript" charset="utf-8"></script>
-    <style type="text/css" media="screen">
-    div.center {
-        text-align: center;
-    }
-    </style>
-</head>
-<div class="center">
-    <img class="fen-diagram" alt="5rk1/2p1bppp/Q7/1p2n3/5n2/2P2q2/PP1P1PbP/RNBBR1K1 w">
-    <p class="caption">Here we see Dr. Frank Poole, who is playing as white, conceding victory to Hal 9000.<br> Taken from the movie 2001: A Space Odyssey</p>
-</div>
-<div class="center">
-    <img class="fen-diagram" width="512" height="512" alt="r1k4r/p2nb1p1/2b4p/1p1n1p2/2PP4/3Q1NB1/1P3PPP/R5K1 w" theme="./staunton_1024.json">
-    <p class="caption">Kasparov, white, resigns in the decisive game of the 1997 re-match against Deep Blue.</p>
-</div>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <title>Fen-Diagram example</title>
+        <script src="fen-diagram.js" type="text/javascript" charset="utf-8"></script>
+        <style type="text/css" media="screen">
+        div.center {
+            text-align: center;
+        }
+        img.fen-diagram {
+            border: 1px solid #ddd;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="center">
+            <img class="fen-diagram" alt="rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1">
+            <p class="caption">The starting position in chess.</p>
+        </div>
+        <div class="center">
+            <img class="fen-diagram" alt="rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq e3 0 1">
+            <p class="caption">White plays e4.</p>
+        </div>
+        <div class="center">
+            <img class="fen-diagram" alt="5rk1/2p1bppp/Q7/1p2n3/5n2/2P2q2/PP1P1PbP/RNBBR1K1 w">
+            <p class="caption">Here we see Dr. Frank Poole, who is playing as white, conceding victory to Hal 9000.<br> Taken from the movie 2001: A Space Odyssey</p>
+        </div>
+        <div class="center">
+            <img class="fen-diagram" width="512" height="512" alt="r1k4r/p2nb1p1/2b4p/1p1n1p2/2PP4/3Q1NB1/1P3PPP/R5K1 w" theme="./staunton_1024.json?">
+            <p class="caption">Kasparov, white, resigns in the decisive game of the 1997 re-match against Deep Blue.</p>
+        </div>    
+    </body>
 </html>
